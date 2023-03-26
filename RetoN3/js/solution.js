@@ -1,21 +1,19 @@
-import { TypePropulsion, TypeStatus } from './enums.mjs';
-import { InterfaceMotorStatus } from './interfaces.mjs';
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
 
 class Motor {
-	status: TypeStatus;
-	propulsionTo: TypePropulsion;
-	history: History;
-
-	constructor (propulsionTo: TypePropulsion, historyInstance: History) {
+	status;
+	propulsionTo;
+	history;
+	constructor (propulsionTo, historyInstance) {
 		this.propulsionTo = propulsionTo;
 		this.history = historyInstance;
 		this.status = 'off';
 	}
 
 	getHistory = () => this.history.getFullState();
-
-	setStatus = (newStatus: TypeStatus) => this.status = newStatus;
-
+	setStatus = (newStatus) => this.status = newStatus;
 	getStatus = () => {
 		const { status, propulsionTo } = this;
 		const GET_STATUS = {
@@ -33,8 +31,8 @@ class Motor {
 
 		const IS_REPEAT = verifyRepeat();
 
-		if (IS_REPEAT) return;
-
+		if (IS_REPEAT)
+			return;
 		const { status } = this;
 		const NEW_STATUS = {
 			status,
@@ -51,8 +49,8 @@ class Motor {
 
 		const IS_REPEAT = verifyRepeat();
 
-		if (IS_REPEAT) return;
-
+		if (IS_REPEAT)
+			return;
 		const { status } = this;
 		const NEW_STATUS = {
 			status,
@@ -70,20 +68,18 @@ class Motor {
 		return IS_REPEAT;
 	};
 }
-
 class History {
-	history: InterfaceMotorStatus[];
+	history;
 	constructor () {
 		this.history = [];
 	}
 
-	setNewStatus (newStatusMotor: InterfaceMotorStatus) {
+	setNewStatus (newStatusMotor) {
 		this.history.push(newStatusMotor);
 	}
 
 	getFullState = () => this.history;
 }
-
 const history = new History();
 const motorUp = new Motor('up', history);
 const motorDown = new Motor('down', history);
