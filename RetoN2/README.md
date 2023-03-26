@@ -1,4 +1,4 @@
-# Recupera el Sistema de Comunicaciones
+# Vulnerabilidades del Sistema de Navegación
 ## Playground
 
 ```jsx

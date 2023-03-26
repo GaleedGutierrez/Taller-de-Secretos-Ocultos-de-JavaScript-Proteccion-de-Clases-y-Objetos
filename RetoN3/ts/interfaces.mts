@@ -1,4 +1,4 @@
-import { TypePropulsion, TypeStatus } from './enums.mjs';
+import { TypePropulsion, TypeStatus } from './types.mjs';
 
 export interface InterfaceMotorStatus {
 	propulsionTo: TypePropulsion;
