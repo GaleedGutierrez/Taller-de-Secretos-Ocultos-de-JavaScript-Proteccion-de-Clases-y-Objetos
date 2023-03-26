@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/GaleedGutierrez/Taller-de-Secretos-Ocultos-de-JavaScript-Proteccion-de-Clases-y-Objetos/issues"
   },
-  "homepage": "https://github.com/GaleedGutierrez/Taller-de-Secretos-Ocultos-de-JavaScript-Proteccion-de-Clases-y-Objetos#readme"
+  "homepage": "https://github.com/GaleedGutierrez/Taller-de-Secretos-Ocultos-de-JavaScript-Proteccion-de-Clases-y-Objetos#readme",
+  "devDependencies": {
+    "typescript": "^5.0.2"
+  }
 }
