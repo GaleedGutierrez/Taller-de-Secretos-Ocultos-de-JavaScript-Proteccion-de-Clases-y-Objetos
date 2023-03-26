@@ -1,0 +1,23 @@
+{
+  "name": "taller-de-secretos-ocultos-de-javascript-proteccion-de-clases-y-objetos",
+  "version": "1.0.0",
+  "description": "Taller de Platzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/GaleedGutierrez/Taller-de-Secretos-Ocultos-de-JavaScript-Proteccion-de-Clases-y-Objetos.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "Galeed Gutierrez <galeedeveloper@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GaleedGutierrez/Taller-de-Secretos-Ocultos-de-JavaScript-Proteccion-de-Clases-y-Objetos/issues"
+  },
+  "homepage": "https://github.com/GaleedGutierrez/Taller-de-Secretos-Ocultos-de-JavaScript-Proteccion-de-Clases-y-Objetos#readme"
+}
